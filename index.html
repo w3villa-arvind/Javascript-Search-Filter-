@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Searching Filter In javascript</title>
+</head>
+<body>
+
+    <h1 class="justify-content-center text-center">Employee Details</h1>
+    <br>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+    <br>
+    <br>
+    
+    <table class="table table-hover" id="myTable">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">course</th>
+            <th scope="col">Position</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Suresh Kumar</td>
+            <td>BCA</td>
+            <td>Front End Developer</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Amit pandey</td>
+            <td> BBA</td>
+            <td>Marketing</td>
+          </tr>
+          
+          <tr>
+            <th scope="row">3</th>
+            <td>Rahul yadav</td>
+            <td>B. Tech</td>
+            <td>React Developer</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Arvind Patel</td>
+            <td>BCA</td>
+            <td>Full Stack Developer</td>
+          </tr>
+         
+          <tr>
+            <th scope="row">5</th>
+            <td>Ajay Pal</td>
+            <td>MCA</td>
+            <td>Ruby On Rails Developer</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Pooja Pal</td>
+            <td>M.Tech</td>
+            <td>Angular Developer</td>
+          </tr>
+
+          <tr>
+            <th scope="row">7</th>
+            <td>Ramesh chuhan</td>
+            <td>MCA</td>
+            <td>Back-End Developer</td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Pushpa Kumari</td>
+            <td>BCA</td>
+            <td>Software Developer</td>
+          </tr>
+         
+          <tr>
+            <th scope="row">9</th>
+            <td>Vikas muarya</td>
+            <td>MBA</td>
+            <td>HR</td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td>Suman Mishra</td>
+            <td>M.Tech</td>
+            <td>Java Developer</td>
+          </tr>
+         
+        </tbody>
+      </table> 
+     <!-- <script >
+          const SearchFun= () =>{
+                  let filter=document.getElementById("MyInput").Value.toUpperCase();
+
+                 let MyTable=document.getElementById("Mytable");
+
+                let tr=MyTable.getElementsByTagName("tr");
+                      for( var i=0;i<tr.length;i++){
+                 let td=tr[i].getElementsByTagName("td")[0];
+
+        if(td){
+            let textValue=td.textContent || td.innerHTML;
+            if(textValue.toUpperCase().indexOf(filter)> -1){
+                tr[i].style.display=" ";
+            }
+            else{
+                tr[i].style.display="none";
+            }
+        }
+    }
+}
+      </script>  
+      -->
+      <script src="/script.js"></script>
+</body>
+</html>
